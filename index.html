@@ -1,51 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tem na Geladeira I.A</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 40px;
-      background-color: #fafafa;
-      text-align: center;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tem na Geladeira I.A</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #ffffff;
+        color: #111827;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-    h1 {
-      font-size: 2.5rem;
-      color: #111;
-    }
+      header {
+        text-align: center;
+        padding: 3rem 1rem 1rem;
+      }
 
-    p {
-      font-size: 1.2rem;
-      color: #333;
-      margin: 20px auto;
-      max-width: 500px;
-    }
+      header h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
 
-    a.botao {
-      display: inline-block;
-      padding: 12px 24px;
-      margin-top: 30px;
-      background-color: #222;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
+      header p {
+        font-size: 1rem;
+        color: #4b5563;
+        margin-bottom: 1.5rem;
+      }
 
-    a.botao:hover {
-      background-color: #555;
-    }
-  </style>
-</head>
-<body>
-  <h1>Tem na Geladeira I.A</h1>
-  <p>Descubra receitas incríveis com o que você já tem em casa.</p>
-  <a class="botao" href="https://tem-na-geladeira.lovable.app/" target="_blank">Testar agora</a>
-</body>
+      .button {
+        background-color: #f97316;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 1rem;
+        text-decoration: none;
+      }
+
+      .subtext {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        color: #6b7280;
+      }
+
+      .image {
+        margin: 2rem 0;
+        max-width: 90%;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .benefits {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        text-align: center;
+        max-width: 800px;
+      }
+
+      .benefit {
+        max-width: 200px;
+      }
+
+      .benefit-icon {
+        font-size: 2rem;
+        color: #f97316;
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        background-color: #1f2937;
+        color: #ffffff;
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: 0.875rem;
+        width: 100%;
+        margin-top: 2rem;
+      }
+
+      footer a {
+        color: #f97316;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Descubra o que dá pra cozinhar com o que você já tem.</h1>
+      <p>
+        Nossa I.A. entende os ingredientes da sua geladeira e sugere receitas
+        deliciosas e criativas em segundos.
+      </p>
+      <a class="button" href="#">Acessar por R$37</a>
+      <div class="subtext">Pagamento único. Acesso vitalício.</div>
+    </header>
+
+    <img
+      class="image"
+      src="imagem-chef.png"
+      alt="Imagem do chef com a placa 'A dieta já era'"
+    />
+
+    <section class="benefits">
+      <div class="benefit">
+        <div class="benefit-icon">📱</div>
+        <h3>Acesso direto do navegador</h3>
+        <p>Sem precisar baixar nenhum aplicativo.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">⚡</div>
+        <h3>IA que entende você</h3>
+        <p>Sugestões inteligentes com base nos seus ingredientes.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">✔️</div>
+        <h3>Pagamento único</h3>
+        <p>Acesso vitalício, sem mensalidades ou surpresas.</p>
+      </div>
+    </section>
+
+    <footer>
+      <strong>Receitas IA</strong><br />
+      Contato: <a href="crude.ce@gmail.com">crude.co@gmail.com</a
+      ><br />
+      <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a> |
+      <a href="#">Suporte</a>
+    </footer>
+  </body>
 </html>
